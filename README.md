@@ -1,54 +1,54 @@
-# The Next Big Thing: Previsão de Sucesso de Filmes
+# The Next Big Thing: Forecasting Hollywood's Future with Film Analytics
 
-Este projeto, desenvolvido por Francisco de Paula Lemos, foca em analisar dados de filmes do IMDb para prever o sucesso de bilheteria. A metodologia utilizada é o CRISP-DM (Cross-Industry Standard Process for Data Mining), que guia o processo desde o entendimento do negócio até a modelagem e a entrega de resultados.
+This project focuses on analyzing IMDb film data to predict box office success. The methodology used is CRISP-DM (Cross-Industry Standard Process for Data Mining), which guides the process from business understanding to modeling and the delivery of results.
 
-O objetivo principal é identificar os fatores que mais influenciam a receita de um filme, fornecendo insights valiosos para a indústria cinematográfica.
+The main objective is to identify the factors that most influence a film's revenue, providing valuable insights for the film industry.
 
-## Estrutura do Projeto
+## Project Structure
 
-O repositório está organizado da seguinte forma:
+The repository is organized as follows:
 
-- `desafio_indicium_imdb.csv`: O conjunto de dados original utilizado para a análise.
-- `LH_CD_FRANCISCO_DE_PAULA_LEMOS.ipynb`: O notebook Jupyter que contém toda a análise, desde a Análise Exploratória de Dados (EDA) até a modelagem preditiva.
-- `requirements.txt`: Lista de todas as bibliotecas Python necessárias para rodar o projeto.
-- `README.md`: Este arquivo, com informações sobre o projeto.
-- `imdb_rating_regressor.pkl`: O modelo de machine learning serializado, pronto para ser usado para fazer previsões de receita.
-- `best_genre_model.pkl`: Outro modelo de machine learning serializado para prever o gênero de maior sucesso.
+  - `desafio_indicium_imdb.csv`: The original dataset used for the analysis.
+  - `LH_CD_FRANCISCO_DE_PAULA_LEMOS.ipynb`: The Jupyter notebook containing the full analysis, from Exploratory Data Analysis (EDA) to predictive modeling.
+  - `requirements.txt`: A list of all Python libraries needed to run the project.
+  - `README.md`: This file, with information about the project.
+  - `imdb_rating_regressor.pkl`: The serialized machine learning model, ready to be used for revenue predictions.
+  - `best_genre_model.pkl`: Another serialized machine learning model to try to predict the a genre by the film synopsis.
 
-## Como Executar o Projeto
+## How to Run the Project
 
-Siga os passos abaixo para instalar as dependências e executar a análise:
+Follow the steps below to install the dependencies and run the analysis:
 
-1.  **Clone o repositório:**
+1.  **Clone the repository:**
     ```bash
     git clone https://github.com/Chicoz0/Forecasting-Hollywood-s-Future-with-Film-Analytics.git
     cd Forecasting-Hollywood-s-Future-with-Film-Analytics
     ```
-2.  **Crie e ative um ambiente virtual (recomendado)::**
+2.  **Create and activate a virtual environment (recommended):**
     ```bash
     python -m venv venv
-    # No Windows
+    # On Windows
     venv\Scripts\activate
-    # No macOS/Linux
+    # On macOS/Linux
     source venv/bin/activate
     ```
-3.  **Instale as dependências:**
+3.  **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-4.  **Execute o notebook:**
-    Inicie o Jupyter Notebook ou JupyterLab na raiz do projeto:
+4.  **Run the notebook:**
+    Start Jupyter Notebook or JupyterLab in the project's root directory:
     ```bash
     jupyter notebook
     ```
-    Ou
+    Or
     ```bash
     jupyter lab
     ```
-    Abra o arquivo `LH_CD_FRANCISCO_DE_PAULA_LEMOS.ipynb` e execute as células para replicar a análise.
+    Open the `LH_CD_FRANCISCO_DE_PAULA_LEMOS.ipynb` file and execute the cells to replicate the analysis.
 
-## Resultados e Conclusões
+## Results and Conclusions
 
-A análise e a modelagem detalhadas no notebook revelaram que fatores como o gênero do filme, o número de votos e o histórico de sucesso do diretor e dos atores são fortes indicadores de alta receita. O modelo preditivo desenvolvido é capaz de prever a receita bruta de um filme com base nessas e outras variáveis.
+The detailed analysis and modeling in the notebook revealed that factors such as film genre, number of votes, and the historical success of the director and actors are strong indicators of high revenue. The developed predictive model is capable of predicting a film's IMDB score based on these and other variables.
 
-Para mais detalhes sobre as análises estatísticas, a Análise Exploratória de Dados (EDA) e a performance do modelo, consulte o notebook `LH_CD_FRANCISCO_DE_PAULA_LEMOS.ipynb`.
+For more details on the statistical analyses, Exploratory Data Analysis (EDA), and model performance, see the `LH_CD_FRANCISCO_DE_PAULA_LEMOS.ipynb` notebook.
